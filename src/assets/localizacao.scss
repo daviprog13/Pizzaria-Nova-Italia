@@ -1,0 +1,33 @@
+.containerLocation{
+display: flex;
+align-items: center;
+
+ .locationEx{
+   margin-left:130px ;
+  div{
+    margin-bottom: 15px;
+    &::before{
+      content: ' ';
+      display: inline-block;
+      height: 6px;
+      width: 15px;
+      background-color: #5F8987;
+      vertical-align: middle;
+      margin-right: 10px;
+      border-radius: 15px;
+    }
+  }
+ }
+  
+}
+
+.map{
+  width: 500px;
+  height: 500px;
+}
+.map-marker{
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+

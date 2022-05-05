@@ -1,0 +1,208 @@
+.card{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+  
+  img{
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .book{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    input{
+      display: none;
+    }
+
+    #cover_apre{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width:45%;
+      height: 500px;
+      div{
+        transform: rotate(-20deg);
+      }
+    }
+
+    .flip-book{
+      width: 45%;
+      height: 500px;
+      position: relative;
+      perspective: 1500px;
+
+      .flip{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform-origin: left;
+        transform-style: preserve-3d;
+        transform: rotateY(0deg);
+        transition: .6s;
+        color: #000;
+
+        .back{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          z-index: 99;
+          transform: rotateY(180deg);
+          backface-visibility: hidden;
+          border: 7px solid #265548;
+          border-radius: 20px 0 0 20px;
+          img{
+            width: 100%;
+            border-radius: 20px 0 0 20px;
+          }
+        }
+
+        .back-btn{
+          position: absolute;
+          bottom: 13px;
+          right: 13px;
+          cursor: pointer;
+        }
+      }
+
+      .front{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        border: 7px solid #265548;
+        border-radius: 0 20px 20px 0;
+        background-color: #ECD4B5;
+        box-sizing: border-box;
+        padding: 0 13px;
+        box-shadow: inset 20px 0 50px rgba(0, 0, 0, .5) 0 2px 5px rgba(0, 0, 0, .5);
+        padding: 20px 10px;
+
+        &>img:first-child{
+          width: 92%;
+          height: 40%;
+          border-radius: 5px;
+        }
+        
+        h2{
+          font-size: 27px;
+
+          &::after{
+            content: ' ';
+            display: block;
+            width:28px;
+            height: 9px;
+            border-radius: 5px;
+            background-color:#E4AD93;
+            margin: 15px 0;
+          }
+        }
+        p{
+          font-size: 14px;
+          color: #000;
+          &::after{
+            content: ' ';
+            display: block;
+            width:28px;
+            height: 9px;
+            border-radius: 5px;
+            background-color:#E4AD93;
+            margin: 15px 0;
+          }
+        }
+        .next-btn{
+          position: absolute;
+          bottom: 13px;
+          right: 13px;
+          cursor: pointer;
+        }
+        
+      }
+      .frontC{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        border: 7px solid #265548;
+        border-radius: 0 20px 20px 0;
+        background-color: #702B33;
+        box-sizing: border-box;
+        padding: 0 13px;
+        box-shadow: inset 20px 0 50px rgba(0, 0, 0, .5) 0 2px 5px rgba(0, 0, 0, .5);
+        padding: 20px 10px;
+
+        &>img:first-child{
+          width: 92%;
+          height: 50%;
+        }
+        h1{
+          font-size: 70px;
+          color: #ffff;
+          font-weight: 500;
+        }
+        p{
+          font-size: 18px;
+          color: #ffff;
+          margin-top: 110px;
+        }
+        .next-btn{
+          position: absolute;
+          bottom: 13px;
+          right: 13px;
+          cursor: pointer;
+        }
+      }
+    }
+
+
+  }
+}
+#p0{
+  z-index: 4;
+}
+#p1{
+  z-index: 3;
+}
+#p2{
+  z-index: 2;
+}
+#p3{
+  z-index: 1;
+}
+
+#c0:checked ~ .flip-book #p0{
+  transform: rotateY(-180deg);
+  z-index: 2;
+}
+
+#c1:checked ~ .flip-book #p1{
+  transform: rotateY(-180deg);
+  z-index: 2;
+}
+
+#c2:checked ~ .flip-book #p2{
+  transform: rotateY(-180deg);
+  z-index: 3;
+}
+
+#c3:checked ~ .flip-book #p3{
+  transform: rotateY(-180deg);
+  z-index: 4;
+}
+

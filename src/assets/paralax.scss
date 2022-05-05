@@ -1,0 +1,28 @@
+.imgParalax {
+  background-image: url('img/primeira.jpg');
+  background-size: cover;
+  padding: 200px 0;
+  box-shadow: inset 6px 6px 13px 0px black;
+  background-attachment: fixed;
+  position: relative;
+
+  h3{
+    text-align: center;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 500;
+    background-color: #00656d;
+    margin: 0 auto;
+    width: 50%;
+    padding: 40px 0;
+    border-radius: 10px;
+    text-shadow: 1px 1px 0 black;
+    position: absolute;
+    top: 175%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    text-transform: uppercase;
+  }
+}
+/* rgba(255, 255, 255, 0.4) */
