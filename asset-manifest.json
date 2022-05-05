@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Pizzaria-Nova-Italia/static/css/main.13031940.css",
+    "main.js": "/Pizzaria-Nova-Italia/static/js/main.5fdb22ab.js",
+    "static/media/primeira.jpg": "/Pizzaria-Nova-Italia/static/media/primeira.96bd9d91e4cc0b2f23ca.jpg",
+    "static/media/vinho1.png": "/Pizzaria-Nova-Italia/static/media/vinho1.941bdaadaffb7f2ce16f.png",
+    "static/media/vinho2.png": "/Pizzaria-Nova-Italia/static/media/vinho2.9087ee4b00ef3a35da21.png",
+    "static/media/vinho3.png": "/Pizzaria-Nova-Italia/static/media/vinho3.4a76eadd48fc4f044216.png",
+    "static/media/pedaco.png": "/Pizzaria-Nova-Italia/static/media/pedaco.597cc26ef1db5c8a4579.png",
+    "static/media/pizza1.png": "/Pizzaria-Nova-Italia/static/media/pizza1.07cd7b5e6d4fe7363528.png",
+    "static/media/pizza2.png": "/Pizzaria-Nova-Italia/static/media/pizza2.d770199423b358049da1.png",
+    "static/media/jantar.png": "/Pizzaria-Nova-Italia/static/media/jantar.bad0d3523ae54b2b21fe.png",
+    "static/media/pizza_2.png": "/Pizzaria-Nova-Italia/static/media/pizza_2.300e926f5c72997d849a.png",
+    "static/media/pizza3.png": "/Pizzaria-Nova-Italia/static/media/pizza3.a5f5b1a1f49dac3e9976.png",
+    "static/media/talheres.png": "/Pizzaria-Nova-Italia/static/media/talheres.192cef37d9aba9568646.png",
+    "static/media/novo.png": "/Pizzaria-Nova-Italia/static/media/novo.dd642e36602fd52bbc41.png",
+    "index.html": "/Pizzaria-Nova-Italia/index.html",
+    "main.13031940.css.map": "/Pizzaria-Nova-Italia/static/css/main.13031940.css.map",
+    "main.5fdb22ab.js.map": "/Pizzaria-Nova-Italia/static/js/main.5fdb22ab.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.13031940.css",
+    "static/js/main.5fdb22ab.js"
+  ]
+}
